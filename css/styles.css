@@ -706,9 +706,10 @@ button:focus {
   
   width: 100%;
   height: 100%;
+  
   bottom: 0;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(100%);
+  transform: translateY(0);
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
 }
@@ -716,6 +717,8 @@ button:focus {
   position: absolute;
   width: 100%;
   height: 168px;
+  top: 0;
+  left: 0;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 24px;
@@ -725,7 +728,7 @@ button:focus {
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-  transform: translateY(100%);
+  transform: translateY(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
 }
@@ -733,7 +736,7 @@ button:focus {
 .thumb:hover::before,
 .thumb__text{
   opacity: 1;
-  transform: translateY(-100%);
+  transform: translateY(0);
 }
 
 /* 
